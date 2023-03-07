@@ -38,12 +38,13 @@
             // 
             this.button1.BackColor = System.Drawing.Color.DarkSalmon;
             this.button1.Location = new System.Drawing.Point(435, 477);
-            this.button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button1.Margin = new System.Windows.Forms.Padding(4);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(289, 72);
             this.button1.TabIndex = 0;
             this.button1.Text = "Продължете към магазина";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // label1
             // 
@@ -65,7 +66,7 @@
             this.label2.Location = new System.Drawing.Point(425, 176);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(148, 57);
+            this.label2.Size = new System.Drawing.Size(142, 55);
             this.label2.TabIndex = 2;
             this.label2.Text = "Sonata";
             // 
@@ -81,7 +82,7 @@
             this.Controls.Add(this.button1);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Form1";
             this.Text = "Sonata";
             this.ResumeLayout(false);

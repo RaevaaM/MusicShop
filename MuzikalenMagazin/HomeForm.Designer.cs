@@ -77,6 +77,7 @@
             this.btnLogIn.TabIndex = 4;
             this.btnLogIn.Text = "Вход";
             this.btnLogIn.UseVisualStyleBackColor = false;
+            this.btnLogIn.Click += new System.EventHandler(this.btnLogIn_Click);
             // 
             // btnContacts
             // 
@@ -167,7 +168,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1241, 788);
+            this.ClientSize = new System.Drawing.Size(667, 502);
             this.Controls.Add(this.homePanel);
             this.Controls.Add(this.panelMenu);
             this.Name = "HomeForm";

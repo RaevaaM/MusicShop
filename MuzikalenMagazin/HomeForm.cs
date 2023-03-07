@@ -12,9 +12,15 @@ namespace MuzikalenMagazin
 {
     public partial class HomeForm : Form
     {
+        
         public HomeForm()
         {
             InitializeComponent();
+        }
+
+        private void btnLogIn_Click(object sender, EventArgs e)
+        {
+            
         }
     }
 }
