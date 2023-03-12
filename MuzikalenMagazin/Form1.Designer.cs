@@ -37,7 +37,7 @@
             // button1
             // 
             this.button1.BackColor = System.Drawing.Color.DarkSalmon;
-            this.button1.Location = new System.Drawing.Point(435, 477);
+            this.button1.Location = new System.Drawing.Point(288, 304);
             this.button1.Margin = new System.Windows.Forms.Padding(4);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(289, 72);
@@ -54,7 +54,7 @@
             this.label1.Location = new System.Drawing.Point(352, 136);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(267, 40);
+            this.label1.Size = new System.Drawing.Size(215, 31);
             this.label1.TabIndex = 1;
             this.label1.Text = "Добре дошли в ";
             // 
@@ -63,20 +63,21 @@
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.DarkSalmon;
             this.label2.Font = new System.Drawing.Font("Segoe Script", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(425, 176);
+            this.label2.Location = new System.Drawing.Point(417, 167);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(142, 55);
+            this.label2.Size = new System.Drawing.Size(117, 44);
             this.label2.TabIndex = 2;
             this.label2.Text = "Sonata";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::MuzikalenMagazin.Properties.Resources.backgr;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(734, 562);
+            this.ClientSize = new System.Drawing.Size(581, 389);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button1);

@@ -16,5 +16,21 @@ namespace MuzikalenMagazin
         {
             InitializeComponent();
         }
+
+        private void LogInBTN_Click(object sender, EventArgs e)
+        {
+            if (textBox1.Text=="Admin" && textBox2.Text=="admin")
+            {
+                HomeForm hf = new HomeForm();
+                hf.Show();
+                this.Hide();
+            }
+            else if (textBox1.Text == "User" && textBox2.Text == "user")
+            {
+                HomeForm hf = new HomeForm();
+                hf.Show();
+                this.Hide();
+            }
+        }
     }
 }

@@ -19,6 +19,14 @@ namespace MuzikalenMagazin
 
         private void button1_Click(object sender, EventArgs e)
         {
+            LogIn logIn = new LogIn();
+            logIn.Show();
+            this.Hide();
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

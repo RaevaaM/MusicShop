@@ -20,7 +20,10 @@ namespace MuzikalenMagazin
 
         private void btnLogIn_Click(object sender, EventArgs e)
         {
-            
+            LogIn logIn = new LogIn();
+            logIn.Show();
+            HomeForm home = new HomeForm();
+            home.Hide();
         }
     }
 }
