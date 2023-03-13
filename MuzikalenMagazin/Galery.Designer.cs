@@ -34,7 +34,6 @@
             this.axWindowsMediaPlayer3 = new AxWMPLib.AxWindowsMediaPlayer();
             this.axWindowsMediaPlayer2 = new AxWMPLib.AxWindowsMediaPlayer();
             this.axWindowsMediaPlayer1 = new AxWMPLib.AxWindowsMediaPlayer();
-            this.linkGallery = new System.Windows.Forms.LinkLabel();
             ((System.ComponentModel.ISupportInitialize)(this.axWindowsMediaPlayer4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.axWindowsMediaPlayer3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.axWindowsMediaPlayer2)).BeginInit();
@@ -92,29 +91,17 @@
             this.axWindowsMediaPlayer1.TabIndex = 0;
             this.axWindowsMediaPlayer1.Enter += new System.EventHandler(this.axWindowsMediaPlayer1_Enter);
             // 
-            // linkGallery
-            // 
-            this.linkGallery.AutoSize = true;
-            this.linkGallery.Location = new System.Drawing.Point(266, 11);
-            this.linkGallery.Name = "linkGallery";
-            this.linkGallery.Size = new System.Drawing.Size(79, 13);
-            this.linkGallery.TabIndex = 5;
-            this.linkGallery.TabStop = true;
-            this.linkGallery.Text = "Добави песен";
-            this.linkGallery.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkGallery_LinkClicked);
-            // 
             // Galery
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.PeachPuff;
-            this.Controls.Add(this.linkGallery);
             this.Controls.Add(this.labelGallery);
             this.Controls.Add(this.axWindowsMediaPlayer4);
             this.Controls.Add(this.axWindowsMediaPlayer3);
             this.Controls.Add(this.axWindowsMediaPlayer2);
             this.Controls.Add(this.axWindowsMediaPlayer1);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Galery";
             this.Size = new System.Drawing.Size(357, 409);
             this.Load += new System.EventHandler(this.Galery_Load);
@@ -134,6 +121,5 @@
         private AxWMPLib.AxWindowsMediaPlayer axWindowsMediaPlayer3;
         private AxWMPLib.AxWindowsMediaPlayer axWindowsMediaPlayer4;
         private System.Windows.Forms.Label labelGallery;
-        private System.Windows.Forms.LinkLabel linkGallery;
     }
 }

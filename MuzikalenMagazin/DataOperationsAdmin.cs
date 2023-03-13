@@ -31,6 +31,12 @@ namespace MuzikalenMagazin
         {
             HomeForm homeForm = new HomeForm();
             homeForm.ShowDialog();
+            this.Hide();
+        }
+
+        private void linkStyles_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            
         }
     }
 }

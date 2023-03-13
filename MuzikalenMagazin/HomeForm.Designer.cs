@@ -39,10 +39,10 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.lblHome = new System.Windows.Forms.Label();
-            this.aboutUs1 = new MuzikalenMagazin.AboutUs();
-            this.contacts1 = new MuzikalenMagazin.Contacts();
-            this.styles1 = new MuzikalenMagazin.Styles();
             this.galery1 = new MuzikalenMagazin.Galery();
+            this.styles1 = new MuzikalenMagazin.Styles();
+            this.contacts1 = new MuzikalenMagazin.Contacts();
+            this.aboutUs1 = new MuzikalenMagazin.AboutUs();
             this.panelMenu.SuspendLayout();
             this.homePanel.SuspendLayout();
             this.SuspendLayout();
@@ -72,6 +72,7 @@
             this.btnAboutUs.TabIndex = 5;
             this.btnAboutUs.Text = "За нас";
             this.btnAboutUs.UseVisualStyleBackColor = false;
+            this.btnAboutUs.Click += new System.EventHandler(this.btnAboutUs_Click);
             // 
             // btnLogIn
             // 
@@ -97,6 +98,7 @@
             this.btnContacts.TabIndex = 3;
             this.btnContacts.Text = "Контакти";
             this.btnContacts.UseVisualStyleBackColor = false;
+            this.btnContacts.Click += new System.EventHandler(this.btnContacts_Click);
             // 
             // btnGallery
             // 
@@ -109,6 +111,7 @@
             this.btnGallery.TabIndex = 2;
             this.btnGallery.Text = "Галерия";
             this.btnGallery.UseVisualStyleBackColor = false;
+            this.btnGallery.Click += new System.EventHandler(this.btnGallery_Click);
             // 
             // btnStyles
             // 
@@ -121,6 +124,7 @@
             this.btnStyles.TabIndex = 1;
             this.btnStyles.Text = "Стилове";
             this.btnStyles.UseVisualStyleBackColor = false;
+            this.btnStyles.Click += new System.EventHandler(this.btnStyles_Click);
             // 
             // btnHome
             // 
@@ -133,6 +137,7 @@
             this.btnHome.TabIndex = 0;
             this.btnHome.Text = "Начало";
             this.btnHome.UseVisualStyleBackColor = false;
+            this.btnHome.Click += new System.EventHandler(this.btnHome_Click);
             // 
             // homePanel
             // 
@@ -179,22 +184,14 @@
             this.lblHome.TabIndex = 0;
             this.lblHome.Text = "Добре дошли в";
             // 
-            // aboutUs1
+            // galery1
             // 
-            this.aboutUs1.BackColor = System.Drawing.Color.PeachPuff;
-            this.aboutUs1.Location = new System.Drawing.Point(2, 1);
-            this.aboutUs1.Name = "aboutUs1";
-            this.aboutUs1.Size = new System.Drawing.Size(357, 409);
-            this.aboutUs1.TabIndex = 1;
-            // 
-            // contacts1
-            // 
-            this.contacts1.BackColor = System.Drawing.Color.PeachPuff;
-            this.contacts1.Location = new System.Drawing.Point(2, 1);
-            this.contacts1.Margin = new System.Windows.Forms.Padding(2);
-            this.contacts1.Name = "contacts1";
-            this.contacts1.Size = new System.Drawing.Size(357, 409);
-            this.contacts1.TabIndex = 2;
+            this.galery1.BackColor = System.Drawing.Color.PeachPuff;
+            this.galery1.Location = new System.Drawing.Point(2, 1);
+            this.galery1.Margin = new System.Windows.Forms.Padding(2);
+            this.galery1.Name = "galery1";
+            this.galery1.Size = new System.Drawing.Size(357, 409);
+            this.galery1.TabIndex = 4;
             // 
             // styles1
             // 
@@ -205,14 +202,22 @@
             this.styles1.Size = new System.Drawing.Size(357, 409);
             this.styles1.TabIndex = 3;
             // 
-            // galery1
+            // contacts1
             // 
-            this.galery1.BackColor = System.Drawing.Color.PeachPuff;
-            this.galery1.Location = new System.Drawing.Point(2, 1);
-            this.galery1.Margin = new System.Windows.Forms.Padding(2);
-            this.galery1.Name = "galery1";
-            this.galery1.Size = new System.Drawing.Size(357, 409);
-            this.galery1.TabIndex = 4;
+            this.contacts1.BackColor = System.Drawing.Color.PeachPuff;
+            this.contacts1.Location = new System.Drawing.Point(2, 1);
+            this.contacts1.Margin = new System.Windows.Forms.Padding(2);
+            this.contacts1.Name = "contacts1";
+            this.contacts1.Size = new System.Drawing.Size(357, 409);
+            this.contacts1.TabIndex = 2;
+            // 
+            // aboutUs1
+            // 
+            this.aboutUs1.BackColor = System.Drawing.Color.PeachPuff;
+            this.aboutUs1.Location = new System.Drawing.Point(2, 1);
+            this.aboutUs1.Name = "aboutUs1";
+            this.aboutUs1.Size = new System.Drawing.Size(357, 409);
+            this.aboutUs1.TabIndex = 1;
             // 
             // HomeForm
             // 
@@ -228,6 +233,7 @@
             this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "HomeForm";
             this.Text = "HomeForm";
+            this.Load += new System.EventHandler(this.HomeForm_Load);
             this.panelMenu.ResumeLayout(false);
             this.homePanel.ResumeLayout(false);
             this.homePanel.PerformLayout();

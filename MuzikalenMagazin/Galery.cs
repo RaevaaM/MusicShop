@@ -16,7 +16,7 @@ namespace MuzikalenMagazin
         {
             InitializeComponent();
         }
-
+        
         private void labelGallery_Click(object sender, EventArgs e)
         {
 
@@ -48,11 +48,13 @@ namespace MuzikalenMagazin
 
         private void Galery_Load(object sender, EventArgs e)
         {
+            
         }
 
         private void linkGallery_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-           
+            DataOperationsAdmin doA = new DataOperationsAdmin();
+            doA.Show();
         }
     }
 }
